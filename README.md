@@ -1,6 +1,6 @@
 # UT06. CSS: hojas de estilo
-![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/37834e63-d9df-4efe-9148-25c0480199f5)
 
+<img src="https://github.com/profeMelola/LM-08-2023-24/assets/91023374/37834e63-d9df-4efe-9148-25c0480199f5" width="400px"/>
 
 ## Página principal del curso
 [VOLVER PÁGINA PRINCIPAL](https://github.com/profeMelola/LM-00-2023-24)
