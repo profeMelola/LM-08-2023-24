@@ -1,0 +1,57 @@
+* {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  #main {
+    background-color: grey;
+  }
+  
+  h1.especial {
+    color: blue;
+  }
+  
+  h2,
+  h3 {
+    border: 1px solid orange;
+  }
+  
+  li {
+    color: red;
+  }
+  
+  li li {
+    color: green;
+  }
+  
+  p > img {
+    border: 5px solid black;
+  }
+  
+  /*
+  
+  https://uniwebsidad.com/libros/css/capitulo-2/selectores-avanzados
+
+  Los cuatro tipos de selectores de atributos son:
+
+[nombre_atributo], selecciona los elementos que tienen establecido el atributo llamado nombre_atributo, independientemente de su valor.
+[nombre_atributo=valor], selecciona los elementos que tienen establecido un atributo llamado nombre_atributo con un valor igual a valor.
+[nombre_atributo~=valor], selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y al menos uno de los valores del atributo es valor.
+[nombre_atributo|=valor], selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y cuyo valor es una serie de palabras separadas con guiones, pero que comienza con valor. Este tipo de selector sólo es útil para los atributos de tipo lang que indican el idioma del contenido del elemento.
+*/
+  img[alt="segunda"] {
+    border: 5px solid red;
+  }
+  
+  /* El combinador ~ separa dos selectores y selecciona el segundo elemento sólo si está precedido por el primero y ambos comparten un padre común.*/
+  p ~ h3.antes {
+    background-color: pink;
+  }
+  /*
+  p ~ h3 {
+    background-color: pink;
+  }*/
+  
+  /* El selector adyacente se emplea para seleccionar elementos que en el código HTML de la página se encuentran justo a continuación de otros elementos. */
+  p + h3 {
+    background-color: blue;
+  }
