@@ -4,3 +4,7 @@ Completa la hoja de estilo CSS para que se muestre la página html como la sigui
 
 ![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/44d26416-cda9-4d4c-9f6e-1b59698fde12)
 
+## Ejercicio 2
+Completa la hoja de estilo CSS para que se muestre la página html como la siguiente:
+
+![Captura de pantalla de 2024-01-30 19-08-24](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/23294129-b202-43ff-b54b-ba1559e269ce)
