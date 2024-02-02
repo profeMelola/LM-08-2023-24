@@ -9,7 +9,7 @@ Completa la hoja de estilo CSS para que se muestre la página html como la sigui
 
 ![Captura de pantalla de 2024-01-30 19-08-24](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/23294129-b202-43ff-b54b-ba1559e269ce)
 
-Las especificaciones son:
+**Las especificaciones son:**
 - Utilizando únicamente pseudoselectores da color de fondo verde a las casillas que contien horas
 - Utilizando únicamente pseudoselectores da color de fondo amarillo a la celda de recreo
 - Cambiar los estado de los enlaces para que:
