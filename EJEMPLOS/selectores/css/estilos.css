@@ -43,13 +43,9 @@
   }
   
   /* El combinador ~ separa dos selectores y selecciona el segundo elemento sólo si está precedido por el primero y ambos comparten un padre común.*/
-  p ~ h3.antes {
-    background-color: pink;
-  }
-  /*
   p ~ h3 {
     background-color: pink;
-  }*/
+  }
   
   /* El selector adyacente se emplea para seleccionar elementos que en el código HTML de la página se encuentran justo a continuación de otros elementos. */
   p + h3 {
