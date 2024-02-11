@@ -9,7 +9,8 @@ img {
   height: 50px;
 }
 
-/*Utilizando clases y una regla de selección haz que todas las celdas con texto de la primera columna
+/*Utilizando clases y una regla de selección haz que 
+todas las celdas con texto de la primera columna
 tengan fondo rojo y letra blanca*/
 .primera {
   background-color: red;
@@ -21,17 +22,20 @@ cambiar el tamaño de la letra centrar el texto y poner el fondo gris */
 
 #fila .gb {
   background-color: grey;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 
-/* Añadiendo sólo un id a la fila que las contiene añade estilos a los elementos de la lista que están dentro de
+/* Añadiendo sólo un id a la fila que las contiene 
+añade estilos a los elementos de la lista que están dentro de
 esa fila para ponerles color de texto rojo*/
 #listas li {
   color: red;
 }
 
-/*Utilizando un id aumenta el padding superior e inferior a la celda en la que pone "5 horas" y dale fondo amarillo*/
+/*Utilizando un id aumenta el padding 
+superior e inferior a la celda en la que pone "5 horas" 
+y dale fondo amarillo*/
 #cinco {
   background-color: yellow;
   padding-top: 50px;
@@ -43,6 +47,8 @@ table {
   border-collapse: collapse;
   margin: 0px auto;
   width: 50%;
+  
+  
 }
 
 td,
@@ -50,8 +56,9 @@ th {
   border: 1px solid black;
 }
 
-/* Dar color de fondo azul a todas las celdas que tiene colspan="2" o colspan="3"*/
+/* Dar color de fondo azul 
+a todas las celdas que tiene colspan="2" o colspan="3"*/
 [colspan="2"],
-[colspan="3"] {
+[colspan="3"]{
   background-color: blue;
 }

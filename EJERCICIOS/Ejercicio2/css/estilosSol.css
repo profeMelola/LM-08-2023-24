@@ -6,14 +6,16 @@ td,
 th {
   border: 1px solid black;
 }
-/* Utilizando únicamente pseudoselectores da color de fondo verde a las casillas que contien horas */
+/* Utilizando únicamente pseudoselectores 
+da color de fondo verde a las casillas que contienen horas */
 
 tbody tr td:first-child {
   background-color: green;
 }
 
-/* Utilizando únicamente pseudoselectores da color de fondo amarillo a la celda de recreo */
-tbody tr:nth-child(3) th:nth-child(2) {
+/* Utilizando únicamente pseudoselectores da 
+color de fondo amarillo a la celda de recreo */
+tbody tr:nth-child(3) th {
   background-color: yellow;
 }
 
@@ -35,29 +37,44 @@ a:visited {
   color: red;
 }
 
-/* Utilizando pseudoselectores hacer que cuando pasemos el ratón sobre la columna del viernes
+/* Utilizando pseudoselectores hacer que 
+cuando pasemos el ratón sobre la columna d
+el viernes (última columna)
 aumente el tamaño de letra al doble */
 
 tr th:last-child:hover,
 tr td:last-child:hover {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
-/* Utilizando Pseudoelementos Haz que la primera letra de los días tenga el doble de tamaño*/
-thead tr th::first-letter {
-  font-size: 2em;
+/* Utilizando Pseudoelementos Haz que 
+la primera letra de los días tenga el doble de tamaño*/
+thead>tr>th::first-letter {
+  font-size: 2rem;
 }
 
-/* Añade un borde rojo que esté separado 5 px a los campos obligatorios */
+/* Añade un borde rojo que esté 
+separado(relleno) 5 px a los campos obligatorios */
 input:required {
   border: 1px solid red;
-  padding: 10px;
+  padding: 5px;
 }
 /* Añade un * en rojo detrás de las etiquetas */
-/*El combinador ~ separa dos selectores y selecciona el segundo elemento sólo si está precedido por el primero y ambos comparten un padre común.*/
-input~label::after {
+/*El combinador ~ separa dos selectores 
+y selecciona el segundo elemento sólo 
+si está precedido por el primero 
+y ambos comparten un padre común.*/
+input[required]~label::after {
   color: red;
   content: "*";
 }
 
-/*(+)Sólo seleccionará un elemento especificado que esté inmediatamente después de otro elemento especificado.*/
+/* EN OBSERVACIÓN*/
+label::after~input[required]{
+  color: red;
+  content: "*";
+}
+
+/*(+)Sólo seleccionará 
+un elemento especificado que esté inmediatamente 
+después de otro elemento especificado.*/
