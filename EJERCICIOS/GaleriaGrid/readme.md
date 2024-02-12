@@ -9,3 +9,4 @@ Sin modificar el archivo galeriaGrid.html, haz la maquetación CSS con ÁREAS GR
 ## Versión 2
 Ahora vamos tu galería será responsive:
 
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/475868ca-085d-4562-b517-222bb2f1a273)
