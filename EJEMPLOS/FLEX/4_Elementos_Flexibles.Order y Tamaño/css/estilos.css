@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+header {
+  background-color: #bbb;
+  display: flex;
+  padding: 1em;
+}
+
+header div {
+  background-color: burlywood;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+/* Cambiando el orden de los elementos flexibles */
+/* El order empieza por 0*/
+/* En este ejemplo, los 4 elementos del header van a ocupar un 60%, por tanto va a sobrar espacio en el contenedor*/
+/* Cuando sobra espacio en el contenedor es cuando entra en juego flex-grow para decidir cuanto espacio se reparte*/
+header :nth-child(1) {
+  order: 3; /*primer hijo en cuarta posición*/
+  flex-basis: 15%; /*indica el tamaño de un elemento antes de distribuir el espacio restante. 
+                    Por defecto la propiedad es auto, por eso la anchura del elemento flexible se ajusta al contenido*/
+}
+
+header :nth-child(2) {
+  order: 0; /*segundo hijo en primera posición*/
+  flex-basis: 15%;
+}
+
+header :nth-child(3) {
+  order: 1; /*tercer hijo en segunda posición*/
+  flex-basis: 15%;
+  flex-grow: 1; /*un factor de crecimiento para repartir el espacio libre. Por defecto es 1*/
+}
+
+header :nth-child(4) {
+  order: 2; /*cuarto hijo en tercera posición*/
+  flex-basis: 15%;
+  flex-grow: 1; /*al añadirle un factor de crecimiento al cuarto hijo, y es el único, pues se le da todo el espacio sobrante*/
+  /*flex-grow: 2;*/ /* está a 2 porque ahora el tercer hijo tiene también un factor de crecimiento. Quiero darle dos partes del espacio sobrante*/
+}
+
+
+
+footer {
+  background-color: cadetblue;
+  display: flex;
+  height: 200px;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+footer div {
+  background-color: burlywood;
+  border: 1px solid black;
+  height: 150px;
+}
+
+/* CON ESPACIO SOBRANTE*/
+
+footer :nth-child(1) {
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+
+footer :nth-child(2) {
+  flex-basis: 20%;
+  flex-grow: 10; /*repartiendo espacio libre y dando más al segundo elemento. Si lo pongo a 1 se pone por igual*/
+}
+
+footer :nth-child(3) {
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+
+/* AHORA FALTA*/
+/*footer :nth-child(1) {
+  flex-basis: 20%;
+  flex-shrink: 1;
+}
+
+footer :nth-child(2) {
+  flex-basis: 70%;
+  flex-shrink: 1;
+}
+
+footer :nth-child(3) {
+  flex-basis: 70%;
+  flex-shrink: 10; 
+}*//*Se encoge 10 veces más en base al 70%*/ /*si lo pongo a 1 se reparte entre todos igual*/

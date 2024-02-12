@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-end; /*alineación vertical*/
+  justify-content: center; /*alineación horizontal*/
+
+  background-color: blanchedalmond;
+  height: 300px;
+  /*margin: 20px auto;*/
+  padding: 2em;
+  width: 60%;
+
+}
+
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end; /*alineación vertical*/
+  justify-content: flex-start; /*alineación horizontal*/
+
+  background-color: blanchedalmond;
+  height: 500px;
+  /*margin: 20px auto;*/
+  /*padding: 2em;*/
+  width: 60%;
+
+}
+
+div {
+  background-color: aquamarine;
+  border: 1px solid black;
+  height: 100px;
+  width: 25%;
+}
+
