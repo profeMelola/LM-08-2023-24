@@ -36,6 +36,13 @@ body {
 
 
   gap: 10px; /* espacio de separación */
+
+  /* PROPIEDADES AVANZADAS */
+  justify-items: stretch; /*alineación horizontal*/
+  align-items: stretch; /*alineación vertical*/
+  /* Los siguientes solo aplica si no ocupan todo el ancho */
+  justify-content: center; /*distribución horizontal*/
+  align-content: center; /*distribución vertical*/
   
 }
 

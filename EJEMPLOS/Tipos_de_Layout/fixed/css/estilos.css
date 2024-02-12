@@ -1,0 +1,26 @@
+.container {
+  background-color: blue;
+  margin: 20px auto;
+  height: 400px;
+  padding: 20px;
+  width: 800px;
+}
+
+header {
+  background-color: orange;
+  height: 40px;
+}
+
+article {
+  background-color: green;
+  height: 340px;
+  margin-top: 20px;
+  width: 350px;
+}
+article:nth-child(1) {
+  float: left;
+}
+
+article:nth-child(2) {
+  float: right;
+}
