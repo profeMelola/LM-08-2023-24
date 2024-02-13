@@ -1,0 +1,146 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*background-color: lightgray;*/ /*Mirad el efecto. No debo poner el background gris a todo!!!! Hay que ponerlo al body*/
+}
+
+body {
+    background-color: lightgrey;
+}
+
+/* 1. EMPIEZO POR EL CONTENEDOR FIJO*/
+/* Barra fija*/
+aside img {
+    margin: 5%;
+    width: 90%;
+    /* poner un ancho para que se ajuste al contenedor. Siempre poner un ancho!!!! */
+}
+
+aside ul {
+    list-style: none;
+    /*para quitar los buletines*/
+    padding-left: 5px;
+}
+
+aside {
+    border: 2px solid black;
+
+    /*redondeo solo del lado derecho*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    font-size: 0.8em;
+    /*un tamaño de letra un poquito más pequeño*/
+
+    height: 40%;
+    /*40% de la página más o menos*/
+    text-align: center;
+    /*para centrarlo*/
+
+    position: fixed;
+    /*position fixed porque siempre quiero que se quede ahí*/
+    top: 30%;
+    /*como he puesto el position fixed ya puedo utilizar top, right, left y bottom*/
+    /*separado un 40% desde arriba*/
+
+    width: 80px;
+}
+
+
+/* 2. Contenedor principal*/
+.container {
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin: 100px auto;
+    /*centrado, separándolo 100px desde arriba*/
+    position: relative;
+    /*height: 600px;*/
+    height: 1200px;
+    width: 80%;
+
+
+}
+
+/*2.1. Es lo que quiero que sea sticky*/
+.container nav {
+    position: sticky;
+    background-color: #555555;
+    top: 0px;
+    /*cuando el scroll llega a su posición se queda fijo*/
+    z-index: 100;
+    /* para que siempre se vea*/
+}
+
+/*.container nav div {*/
+.nav-item {
+    /*background-color: grey;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    width: 100px;*/
+    color: white;
+    display: inline-block; /*irán uno detrás de otro*/ /*probrad a quitarlo*/
+    padding: 20px;
+    width: 20%;    
+}
+
+/*2.2. Las figuras tengo que colocarlas en relación al contenedor verde.
+Por eso necesito poner al contenedor padre el position relative y a cada figure (#li)
+un position absolute
+*/
+figure {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    width: 20%; /*tamaño en relación a su contenedor que es el div .container*/
+    padding: 10px;
+}
+
+figure img {
+    width: 90%;
+    /*padding-top: 5%;*/
+}
+
+/* Se posicionan respecto al primer relative. En nuestro caso el contenedor .container (el tapete verde)*/
+#f1 {
+    left: 20%;
+    position: absolute;
+    top: 25%;
+    -webkit-transform: rotate(-45deg);
+    /*transform: rotate(-45deg);*/
+    z-index: 10;
+}
+
+#f2 {
+    left: 30%;
+    position: absolute;
+    top: 30%;
+    -webkit-transform: rotate(45deg);
+    /*transform: rotate(45deg);*/
+    z-index: 6;
+}
+
+#f3 {
+    left: 40%;
+    position: absolute;
+    top: 35%;
+    -webkit-transform: rotate(-15deg);
+    /*transform: rotate(-15deg);*/
+    z-index: 4;
+}
+
+#f4 {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    z-index: 2;
+}
+
+/* EFECTO: truqui del almendruqui:al pasar por encima*/
+#f1:hover,#f2:hover,#f3:hover,#f4:hover{
+    z-index: 10;
+}

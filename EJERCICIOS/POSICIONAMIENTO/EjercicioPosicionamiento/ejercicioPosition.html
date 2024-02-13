@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio de Posicionamiento de Elementos</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+
+    <!-- 2. -->
+    <!-- Resto en un contenedor container -->
+    <div class="container">
+
+        <!-- Quiero que nav sea un elemento stiky-->
+        <nav>
+            <div class="nav-item">
+                Home
+            </div>
+            <div class="nav-item">
+                Products
+            </div>
+            <div class="nav-item">
+                About US
+            </div>
+            <div class="nav-item">
+                Contact
+            </div>
+
+        </nav>
+
+        <!-- Cada figure es un elemento en bloque-->
+        <section>
+            <figure id="f1">
+                <img src="img/img1.jpg" />
+                <figcaption>Lugar de Interés 1</figcaption>
+            </figure>
+            <figure id="f2">
+                <img src="img/img2.jpg" />
+                <figcaption>Lugar de Interés 2</figcaption>
+            </figure>
+            <figure id="f3">
+                <img src="img/img3.jpg" />
+                <figcaption>Lugar de Interés 3</figcaption>
+            </figure>
+            <figure id="f4">
+                <img src="img/img4.jpg" />
+                <figcaption>Lugar de Interés 4</figcaption>
+            </figure>
+        </section>
+
+    </div>
+
+    <!-- 1. EMPEZAD POR LA BARRA LATERAL-->
+    <!-- div para la barra lateral: position fixed. No se ve afectado por el scroll y está siempre en la misma posición del documento -->
+    <aside>
+        <!-- imagen -->
+        <img src="img/profile.png"/>
+        <!-- lista -->
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </aside>
+
+</body>
+
+</html>
