@@ -2,10 +2,10 @@ html { font-size: 22px; }
 body { padding: 1rem; }
 
 .card {
-  background-color: dodgerblue;
-  color: white;
+  /*background-color: dodgerblue;
+  color: white;*/
   padding: 1rem;
-  height: 4rem;
+  /*height: 4rem;*/
 }
 
 .cards {
@@ -13,6 +13,7 @@ body { padding: 1rem; }
   margin: 0 auto;
   display: grid;
   gap: 1rem;
+
   /*  la potencia de minmax la encontramos 
   cuando lo combinamos con el repeat(), 
   porque entonces conseguimos que el número de columnas 
@@ -20,5 +21,6 @@ body { padding: 1rem; }
 
   /*pinta tantas columnas como puedas que vayan de 300px hasta 1fr 
   (el máximo espacio que esté disponible)*/
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
