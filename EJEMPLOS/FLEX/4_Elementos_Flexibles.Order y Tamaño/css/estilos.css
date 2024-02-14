@@ -43,8 +43,8 @@ header :nth-child(3) {
 header :nth-child(4) {
   order: 2; /*cuarto hijo en tercera posición*/
   flex-basis: 15%;
-  flex-grow: 1; /*al añadirle un factor de crecimiento al cuarto hijo, y es el único, pues se le da todo el espacio sobrante*/
-  /*flex-grow: 2;*/ /* está a 2 porque ahora el tercer hijo tiene también un factor de crecimiento. Quiero darle dos partes del espacio sobrante*/
+  /*flex-grow: 1;*/ /*al añadirle un factor de crecimiento al cuarto hijo, y es el único, pues se le da todo el espacio sobrante*/
+  flex-grow: 2; /* está a 2 porque ahora el tercer hijo tiene también un factor de crecimiento. Quiero darle dos partes del espacio sobrante*/
 }
 
 

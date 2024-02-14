@@ -2,12 +2,16 @@
   box-sizing: border-box;
 }
 
+.container > div:nth-child(2) {
+  align-self: center;
+}
+
 .container {
   align-items: flex-end;
   background-color: blanchedalmond;
   display: flex;
   height: 300px;
-  justify-content: center;
+  justify-content: space-between;
   margin: 20px auto;
   padding: 2em;
   width: 80%;
@@ -20,6 +24,3 @@
   width: 25%;
 }
 
-.container > div:nth-child(2) {
-  align-self: center;
-}
