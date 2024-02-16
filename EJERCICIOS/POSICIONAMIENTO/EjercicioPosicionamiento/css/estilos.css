@@ -39,7 +39,7 @@ aside {
 
     position: fixed;
     /*position fixed porque siempre quiero que se quede ahí*/
-    top: 30%;
+    top: 40%;
     /*como he puesto el position fixed ya puedo utilizar top, right, left y bottom*/
     /*separado un 40% desde arriba*/
 
@@ -108,8 +108,8 @@ figure img {
     left: 20%;
     position: absolute;
     top: 25%;
-    -webkit-transform: rotate(-45deg);
-    /*transform: rotate(-45deg);*/
+    /*-webkit-transform: rotate(-45deg);*/
+    transform: rotate(-45deg);
     z-index: 10;
 }
 

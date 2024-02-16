@@ -22,11 +22,12 @@ img {
     height: 100%;
 }
 
-/* Screen larger than 600px? 2 column */
+
 @media (min-width: 400px) {
   .cards { grid-template-columns: repeat(1, 1fr); }
 }
 
+/* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
   }
