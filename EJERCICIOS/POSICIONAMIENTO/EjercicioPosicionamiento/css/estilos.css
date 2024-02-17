@@ -13,11 +13,13 @@ body {
 aside img {
     margin: 5%;
     width: 90%;
-    /* poner un ancho para que se ajuste al contenedor. Siempre poner un ancho!!!! */
+    /* poner un ancho para 
+    que se ajuste al contenedor. 
+    Siempre poner un ancho!!!! */
 }
 
 aside ul {
-    list-style: none;
+    list-style-type: none;
     /*para quitar los buletines*/
     padding-left: 5px;
 }
@@ -34,14 +36,17 @@ aside {
 
     height: 40%;
     /*40% de la página más o menos*/
+
     text-align: center;
     /*para centrarlo*/
 
     position: fixed;
     /*position fixed porque siempre quiero que se quede ahí*/
-    top: 40%;
-    /*como he puesto el position fixed ya puedo utilizar top, right, left y bottom*/
     /*separado un 40% desde arriba*/
+    top: 40%;
+    /*como he puesto el position fixed ya puedo utilizar 
+    top, right, left y bottom*/
+    
 
     width: 80px;
 }
@@ -103,10 +108,12 @@ figure img {
     /*padding-top: 5%;*/
 }
 
-/* Se posicionan respecto al primer relative. En nuestro caso el contenedor .container (el tapete verde)*/
+/* Se posicionan respecto al primer relative. 
+En nuestro caso el contenedor .container (el tapete verde)*/
 #f1 {
-    left: 20%;
     position: absolute;
+    left: 20%;
+    
     top: 25%;
     /*-webkit-transform: rotate(-45deg);*/
     transform: rotate(-45deg);
@@ -141,6 +148,9 @@ figure img {
 }
 
 /* EFECTO: truqui del almendruqui:al pasar por encima*/
-#f1:hover,#f2:hover,#f3:hover,#f4:hover{
+#f1:hover,
+#f2:hover,
+#f3:hover,
+#f4:hover{
     z-index: 10;
 }

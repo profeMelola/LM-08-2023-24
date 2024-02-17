@@ -32,37 +32,42 @@ body {
 
 /* Task RESPONSIVE*/
 
-/* Mobile */
+/* Mobile first*/
 .container {
   display: grid;
   height: 100vh;
 
   grid-template-rows: auto auto 1fr auto auto auto;
   grid-template-columns: 1fr;
+
   gap: 10px;  
 }
+
 
 /* Tablet */
 @media (min-width: 720px) {
  
   .container{
-    grid-template-rows: auto auto 1fr auto auto;
+    /*grid-template-rows: auto auto 1fr auto auto;*/
     grid-template-columns: repeat(12,1fr);
   }
 
   /* The header section takes 12 columns*/
   header {
     grid-column: 1 / span 12;
+    grid-row: 1;
   }
 
   /* The navigation section also takes 12 columns*/
   nav {
     grid-column: 1 / span 12;
+    grid-row: 2;
   }
 
   /* The main section takes 10 columns start from column 3*/
   main {
     grid-column: 3 / span 10;
+    grid-row: 3;
   }
 
   /* The sidebar takes 2 columns start from column 1*/
@@ -74,11 +79,13 @@ body {
   /* The ads section takes 2 columns start from column 1*/
   #ads {
     grid-column: 1 / span 2;
+    grid-row: 4;
   }
 
   /* The footer section takes 10 columns start from column 3*/
   footer {
     grid-column: 3 / span 10;
+    grid-row: 4;
   }
 }
 /* Desktop: we will work with a screen that is bigger than 1020px */
