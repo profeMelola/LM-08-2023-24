@@ -60,7 +60,6 @@ header{
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropbtn a, nav>div>a {
