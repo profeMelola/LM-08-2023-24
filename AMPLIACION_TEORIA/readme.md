@@ -12,8 +12,8 @@ https://flexboxfroggy.com/#es
 
 # Display: inline, block, inline-block
 
-inline: Muestra en la misma línea (respetando el flujo) todos los elementos y no acepta las propiedades width, height ni margenes verticales.
+**inline:** Muestra en la misma línea (respetando el flujo) todos los elementos y no acepta las propiedades width, height ni margenes verticales.
 
-block: Muestra los elementos en líneas independientes y acepta las propiedades width, height y margenes verticales.
+**block:** Muestra los elementos en líneas independientes y acepta las propiedades width, height y margenes verticales.
 
-inline-block: Su comportamiento es una mezcla entre los dos anteriores, se muestran en la misma línea (respetando el flujo) todos los elementos y además, acepta las propiedades width, height y margenes verticales.
+**inline-block:** Su comportamiento es una mezcla entre los dos anteriores, se muestran en la misma línea (respetando el flujo) todos los elementos y además, acepta las propiedades width, height y margenes verticales.
