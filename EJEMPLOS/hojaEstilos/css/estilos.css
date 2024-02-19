@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 60%;
+    margin:0px auto;
+}
+
+/*Header superior: #002060 | Transparencia: 95% | Imagen:
+https://programaseuropeosiesavellaneda.es/wp-content/uploads/2022/02/header-bk.jpg |
+Parallax: fijo
+Logo: https://programaseuropeosiesavellaneda.es/wpcontent/uploads/2022/02/logo_ies_peavellaneda.png
+Relleno del header: Superior: 30px; Inferior: 50px; Resto: 0px;*/
+header {
+    color: #002060;
+    background: #002060 url('../img/header-bk.jpg');
+    background-attachment: fixed; /* efecto parallax fijo. La imagen se mantiene fija aunque hga scroll */
+    opacity: 0.95;
+    padding: 30px 50px 0px; /* top buttom ejeHorizonal*/
+    
+    text-align: center;
+}
+
+/*Menú: #ffffff | Cursor menú por encima: #ffcd7c | Menú activado: #ffc260 |
+Alineación: centrado | Márgenes: Superior e inferior: 10px; (resto 0)
+Tipografía:
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); |
+Tamaño (px): 15 | Peso: fino | Altura de línea: 1*/
+
+ul {
+    font-size: 15px;
+    /*font-weight: lighter;*/
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+    margin: 10px 10px;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #002060;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 1px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #ffcd7c;
+}
+
+li a:active {
+    background-color: #ffc260;
+}
+
+/*CONTENIDO DEL CUERPO, BODY.
+Tipografía:
+@import
+url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap'); |
+Color: #1B1C1E | Tamaño: indiferente */
+main{
+    color: #1B1C1E;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+}
+
+
+
