@@ -12,15 +12,11 @@ img{
 }
 
 .row{
-    display: flex; 
     padding: 5px;
-    flex-wrap: wrap; /*por defecto nowrap y siempre intenta encajar en la misma fila todo. 
-    Si es wrap, cuando no queda salta a la siguiente*/
 
 }
 
 .column{
-    flex: 25%; /*Tengo cuatro columnas y quiero que cada una sea del 25%*/
     padding: 5px;
 }
 
@@ -29,17 +25,9 @@ img{
 }
 
 @media (max-width: 800px){ /*desktop*/
-    .column{
-        /* es una propiedad resumida */
-        /*https://developer.mozilla.org/es/docs/Web/CSS/flex*/
-        flex: 50%; /*hasta 800px se va a mostrar en dos columnas porque a cada columna (son 4) le pongo un 50%, por
-                    /*tanto solo caben dos columnas y al ser wrap bajarán el resto de columnas a la siguiente fila*/
-    }
+    
 }
 
 @media (max-width: 600px){ /*movil*/
-    .column{
-        flex: 100%; /*hasta 600px se va a mostrar solo 1 columna. Al ser wrap el resto bajará a la siguiente fila.
-                    /*He montado un pancake de forma muy fácil*/
-    }
+
 }
