@@ -1,0 +1,12 @@
+.tabla {
+    margin: 0 auto; /* Centra la tabla horizontalmente en su contenedor */
+    width: fit-content; /* Establece que el ancho de la tabla se ajuste automáticamente al contenido */
+} 
+
+.tabla div {
+    background: lightblue; /* Establece el color de fondo para todas las celdas de la tabla */
+    color: brown; /* Establece el color del texto para todas las celdas de la tabla */
+    padding: 18px; /* Añade espacio interno a todas las celdas de la tabla */
+    text-align: center; /* Centra el texto dentro de todas las celdas de la tabla */
+    border: 2px solid brown; /* Establece el borde de todas las celdas de la tabla */
+}
