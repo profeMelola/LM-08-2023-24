@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo formulario con mailto</title>
+</head>
+ 
+<body>
+    <div class="container">
+        <h1>FORMULARIO PARA ENVIAR DATOS POR EMAIL</h1>
+
+        <form method="POST" action="mailto: melola@educa.madrid.org" enctype="multipart/form-data">
+            <p>
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" name="nombre"/>
+            </p>
+           
+            <p>
+                <label for="dni">DNI:</label>
+                <input id="dni" type="text" name="dni"/>
+            </p>
+
+            <p>
+                <label for="comment">Observaciones:</label>
+                <textarea rows="7" cols="30" name="comment"></textarea>
+            </p>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
