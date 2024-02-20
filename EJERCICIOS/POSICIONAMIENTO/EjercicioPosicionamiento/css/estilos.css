@@ -113,8 +113,8 @@ En nuestro caso el contenedor .container (el tapete verde)*/
 #f1 {
     position: absolute;
     left: 20%;
-    
     top: 25%;
+    
     /*-webkit-transform: rotate(-45deg);*/
     transform: rotate(-45deg);
     z-index: 10;
