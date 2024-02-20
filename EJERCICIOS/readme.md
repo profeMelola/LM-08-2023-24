@@ -20,3 +20,9 @@ Completa la hoja de estilo CSS para que se muestre la página html como la sigui
 - Utilizando Pseudoelementos Haz que la primera letra de los días tenga el doble de tamaño*/
 - Añade un borde rojo que esté separado 5 px a los campos obligatorios
 - Añade un * en rojo detrás de las etiquetas
+
+## Galería GRID
+
+## Galería FLEX
+
+## Posicionamiento
