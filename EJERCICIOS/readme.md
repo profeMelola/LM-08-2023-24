@@ -25,4 +25,13 @@ Completa la hoja de estilo CSS para que se muestre la página html como la sigui
 
 ## Galería FLEX
 
+Con flex hay que diseñar una galería de fotos adaptable a formato desktop, tablet y mobile.
+Revisa el CSS inicial con sus media querys.
+Añade las propiedades flex oportunas.
+
+### Desktop
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/8d1b6cb7-9308-4be1-abea-3253eccb8479)
+
+### Tablet
+
 ## Posicionamiento
