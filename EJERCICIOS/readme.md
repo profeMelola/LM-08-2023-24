@@ -23,15 +23,29 @@ Completa la hoja de estilo CSS para que se muestre la página html como la sigui
 
 ## Galería GRID
 
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/c52a7bee-70cd-4ab4-9b06-4e8e3ceb0320)
+
 ## Galería FLEX
 
 Con flex hay que diseñar una galería de fotos adaptable a formato desktop, tablet y mobile.
 Revisa el CSS inicial con sus media querys.
 Añade las propiedades flex oportunas.
 
-### Desktop
+### Desktop 
 ![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/8d1b6cb7-9308-4be1-abea-3253eccb8479)
 
-### Tablet
+### Tablet (max-width: 800px)
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/5f7c200c-daa2-447b-9c83-93f18d5a2e9a)
+
+
+### Mobile (max-width: 600px)
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/aeebe8c9-2dde-46bf-b3dc-59acd34578ed)
+
+
 
 ## Posicionamiento
+
+Ejercicio guidado para trabajar con la propiedad position.
+
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/1fc482d1-4e1f-420d-9eca-8f40332b4512)
+
