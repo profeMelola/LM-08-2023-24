@@ -1,4 +1,6 @@
 # Ejercicios CSS
+Cada ejercicio tiene su carpeta con los recursos asociados.
+
 ## Ejercicio 1
 Completa la hoja de estilo CSS para que se muestre la página html como la siguiente:
 
