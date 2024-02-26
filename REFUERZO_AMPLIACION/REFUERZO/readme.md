@@ -33,6 +33,7 @@ Partiendo del html que se te proporciona, diseña el siguiente formulario, centr
 - Los campos de texto deben tener un texto provisional informativo.
 - El correo debe cumplir con el patrón: solo puede contener letras (may y min), seguido de @ y acabar en gmail.com
 
-![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/5d954d63-dcac-4243-a143-e076981e67e9)
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/f465d110-907d-4d7a-b9fe-67af9dd259ce)
+
 
 
