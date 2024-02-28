@@ -1,0 +1,48 @@
+.contenedor{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos flexibles se envuelvan en varias líneas si es necesario */
+    justify-content: center; /* Centra los elementos flexibles horizontalmente en el contenedor */
+    align-items: center; /* Centra los elementos flexibles verticalmente en el contenedor */
+
+    
+}
+
+.tarjeta {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*justify-content: center;*/
+    width: 250px; /* Establece el ancho de la tarjeta */
+    height: auto; /* Permite que la altura de la tarjeta se ajuste automáticamente según su contenido */
+    border-radius: 15px; /* Establece el radio de borde de la tarjeta */
+    background-color: plum; /* Establece el color de fondo de la tarjeta */
+    border: 2px solid purple; /* Establece el borde de la tarjeta */
+    text-align: center; /* Alinea el texto al centro dentro de la tarjeta */
+    padding: 15px; /* Añade espacio interno a la tarjeta */
+    margin: 15px; /* Establece el margen alrededor de la tarjeta */
+}
+
+.imagen {
+    width: 100px; /* Establece el ancho de la imagen */
+    height: 100px; /* Establece la altura de la imagen */
+    border: 8px solid purple; /* Establece el borde de la imagen */
+    border-radius: 50%; /* Establece el radio de borde para que la imagen sea circular */
+    margin-bottom: 20px; /* Añade espacio inferior a la imagen */
+    background-size: cover; /* Escala la imagen para que cubra completamente el contenedor */
+    background-position: center center; /* Centra la imagen dentro del contenedor */
+}
+
+.nombre {
+    font-size: 28px; /* Establece el tamaño de fuente del nombre */
+}
+
+.casa {
+    color: purple; /* Establece el color del texto de la clase "casa" */
+}
+
+.descripcion {
+    padding: 15px; /* Añade espacio interno a la descripción */
+    border: 3px dashed purple; /* Establece el borde punteado de la descripción */
+    border-radius: 15px; /* Establece el radio de borde de la descripción */
+}

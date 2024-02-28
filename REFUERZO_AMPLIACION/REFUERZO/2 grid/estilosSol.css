@@ -1,0 +1,44 @@
+.tabla {
+    display: grid; /* Establece el contenedor de la tabla como un grid container */
+    grid-gap: 5px; /* Establece el espacio entre las celdas del grid */
+    grid-template-columns: 100px repeat(4, 1fr); /* Define el ancho de las columnas del grid: la primera columna tiene 100px de ancho fijo, las siguientes cuatro columnas se distribuyen de manera uniforme en el espacio restante */
+    grid-template-areas: 
+      'cabecera cabecera cabecera cabecera cabecera ' /* Define el área de la cabecera */
+      'lateral col1 col1 col2 col2 ' /* Define el área de las celdas laterales y las dos primeras columnas */
+      'lateral col3 col3 col4 col4 '; /* Define el área de las celdas laterales y las dos últimas columnas */
+    /*justify-items: stretch;*/ /* Por defecto: Establece que los elementos dentro de las celdas se estiren horizontalmente para ocupar todo el espacio */
+    margin: 0 auto; /* Centra la tabla horizontalmente en su contenedor */
+    width: 600px; /* Establece el ancho total de la tabla */
+}
+
+.tabla div {
+    background: lightblue; /* Establece el color de fondo para todas las celdas de la tabla */
+    color: brown; /* Establece el color del texto para todas las celdas de la tabla */
+    padding: 18px; /* Añade espacio interno a todas las celdas de la tabla */
+    text-align: center; /* Centra el texto dentro de todas las celdas de la tabla */
+    border: 2px solid brown; /* Establece el borde de todas las celdas de la tabla */
+}
+
+.cabecera {
+    grid-area: cabecera; /* Define el área de la cabecera */
+}
+
+.lateral {
+    grid-area: lateral; /* Define el área de las celdas laterales */
+}
+
+.col1 {
+    grid-area: col1; /* Define el área de la primera columna */
+}
+
+.col2 {
+    grid-area: col2; /* Define el área de la segunda columna */
+}
+
+.col3 {
+    grid-area: col3; /* Define el área de la tercera columna */
+}
+
+.col4 {
+    grid-area: col4; /* Define el área de la cuarta columna */
+}

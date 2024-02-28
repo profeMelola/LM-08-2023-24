@@ -177,6 +177,12 @@ td {
 /* Tablet */
 @media (min-width: 720px) {
 
+  /*.container{
+    grid-template-rows: ;
+    grid-template-columns: ;
+  }*/
+
+
   /* The header section takes 12 columns*/
   header {
     grid-column: 1 / span 12;

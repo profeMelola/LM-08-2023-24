@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{ /*estilos generales*/
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%; /*se adaptan las imágenes al contenedor*/
+}
+
+.row{
+    padding: 5px;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    flex-basis: 25%;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){ /*laptop*/
+    .column{
+        flex-basis: 50%;
+    }
+    
+}
+
+@media (max-width: 600px){ /*movil*/
+    .column{
+        flex-basis: 100%;
+    }
+
+}

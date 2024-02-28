@@ -18,7 +18,8 @@ Relleno del header: Superior: 30px; Inferior: 50px; Resto: 0px;*/
 header {
     color: #002060;
     background: #002060 url('../img/header-bk.jpg');
-    background-attachment: fixed; /* efecto parallax fijo. La imagen se mantiene fija aunque hga scroll */
+    background-attachment: fixed; /* efecto parallax fijo. 
+    La imagen se mantiene fija aunque hga scroll */
     opacity: 0.95;
     padding: 30px 50px 0px; /* top buttom ejeHorizonal*/
     

@@ -1,0 +1,23 @@
+.tabla {
+    display: grid; /* Establece el contenedor de la tabla como un grid container */
+    grid-gap: 5px; /* Establece el espacio entre las celdas del grid */
+    grid-template-columns: 100px 150px 200px; /* Define el ancho de las columnas del grid */
+    margin: 0 auto; /* Centra la tabla horizontalmente en su contenedor */
+    width: fit-content; /* Establece que el ancho de la tabla se ajuste automáticamente al contenido */
+} 
+
+.tabla div {
+    background: lightblue; /* Establece el color de fondo para todas las celdas de la tabla */
+    color: brown; /* Establece el color del texto para todas las celdas de la tabla */
+    padding: 18px; /* Añade espacio interno a todas las celdas de la tabla */
+    text-align: center; /* Centra el texto dentro de todas las celdas de la tabla */
+    border: 2px solid brown; /* Establece el borde de todas las celdas de la tabla */
+}
+
+.cabecera {
+    grid-column: 1/4; /* Establece que la cabecera ocupa desde la primera hasta la última columna del grid */
+}
+
+.sidebar {
+    grid-row: 2/ span 3; /* Establece que la barra lateral abarca desde la segunda fila hasta tres filas más */
+}
