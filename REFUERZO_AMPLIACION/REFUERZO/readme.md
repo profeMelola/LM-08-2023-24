@@ -23,8 +23,17 @@ Haz el diseño Grid Layout para obtener los siguientes resultados:
 
 # Ejercicio 3: Formulario
 
-Partiendo del html que se te proporciona, diseña el siguiente formulario, centrado en página y teniendo en cuenta que al pasar el ratón por encia del botón de submit, este debe cambiar al color #0056b3
+Partiendo del html que se te proporciona, diseña el siguiente formulario, centrado en página y teniendo en cuenta que:
+- Al pasar el ratón por encia del botón de submit, este debe cambiar al color #0056b3.
+- Los label de los campos obligatorios deben marcarse con un * (hacerlo vía css)
+- La longitud del nombre no puede ser superior a 20
+- Si se selecciona Masculino, no se puede seleccionar Femenino.
+- El checkbox para suscribirse debe estar seleccionado por defecto.
+- Los campos input inválidos deben tener un fondo pink.
+- Los campos de texto deben tener un texto provisional informativo.
+- El correo debe cumplir con el patrón: solo puede contener letras (may y min), seguido de @ y acabar en gmail.com
 
-![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/5d954d63-dcac-4243-a143-e076981e67e9)
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/f465d110-907d-4d7a-b9fe-67af9dd259ce)
+
 
 
