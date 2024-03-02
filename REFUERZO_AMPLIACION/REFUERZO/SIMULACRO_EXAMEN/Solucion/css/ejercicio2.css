@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+ 
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: darkmagenta;
+    /* centrado */
+    text-align: center;
+}
+
+form{
+    /* formulario que ocupa de ancho el 50% de su contenedor padre*/
+    width: 70%;
+
+    /* centrado */
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: white;
+    border: 4px solid pink;
+    border-radius: 6px;
+    
+    /* margen eje superior a 20 px*/
+    margin: 20px 0px;
+}
+
+legend {
+    font-weight: bolder;
+    color: darkmagenta;
+    border: 4px solid pink;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+/* no puedes modificar el html*/
+/* los fieldset pares */
+fieldset:nth-child(2), fieldset:nth-child(4){
+    background-color: antiquewhite;
+}
+
+/* último fieldset botones centrados */
+fieldset:last-child{
+    text-align: center;
+}
+
+/* Campos inválidos con backgroud colorlightgray */
+input:invalid{
+    background-color: lightgray;
+}
+
+/* Campos obligatorios border puntos 5px color fuchsia*/
+input:required{
+    border: 5px dotted fuchsia;
+}
+

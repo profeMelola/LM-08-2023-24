@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de deportes">
+    <meta name="author" content="NombreApellidos">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/ejercicio2_grid_flex.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/ejercicio2.css" type="text/css">
+    <title>Formulario</title>
+</head>
+
+<body class="container">
+    <h1>Formulario de consulta</h1>
+    <div id="contenedor">
+        <form action="mailto:examen@daw.es">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" size="50" minlength="10" required />
+                    </p>
+
+                    <p>
+                        <label for="tipo">Tipo</label>
+                        <select name="tipo" multiple>
+                            <option>Reclamación</option>
+                            <option>Duda</option>
+                            <option>Cambiar datos personales</option>
+                            <option>Otros</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="desc">Añade tu comentario</label>
+                        <textarea rows="5" cols="70" id="desc" name="desc">Escribe algo aquí</textarea>
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" min="18" max="99" />
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contacto</legend>
+                    <p>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Escrite tu email personal" size="30" required />
+                        <input type="radio" name="tipo" checked>Personal</input>
+                        <input type="radio" name="tipo">Profesional</input>
+                    </p>
+                    <p>
+                        <label for="telefonofijo">Teléfono fijo</label>
+                        <input id="telefonofijo" name="telefonofijo" pattern="[0-9]{9}" size="10"/>
+                        <label for="telefonomovil">Móvil</label>
+                        <input id="telefonomovil" name="telefonomovil" pattern="[0-9]{9}" size="10" />
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Horario de contacto</legend>
+                    <p>
+                        <input type="checkbox" name="turno"/>Mañana
+                        <input type="checkbox" name="turno"/>Tarde
+                        <input type="checkbox" name="turno"/>Noche
+                    </p>
+                    <p>
+                        <label>Día de contacto</label>
+                        <input type="date" name="fecha"/>
+                    </p>
+                </fieldset>
+
+            <fieldset>
+                <input id="alta" type="submit" value="Enviar" />
+                <input id="alta" type="reset" value="Limpiar formulario" />
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>

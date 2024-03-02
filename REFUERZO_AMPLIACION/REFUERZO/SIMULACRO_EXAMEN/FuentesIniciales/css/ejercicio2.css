@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+ 
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: darkmagenta;
+    /* PENDIENTE: centrado */
+
+}
+
+form{
+    width: 50%;
+
+    /* PENDIENTE: centrado */
+
+}
+
+fieldset {
+    background-color: white;
+    border: 4px solid pink;
+    border-radius: 6px;
+    
+    /* PENDIENTE: margen eje vertical a 20 px*/
+    
+}
+
+legend {
+    font-weight: bolder;
+    color: darkmagenta;
+    border: 4px solid pink;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* ************************************************************************************** */
+/* ************** NO USAR EN EL HTML ATRIBUTO CLASS NI ID!!!*******************************/
+/* ************************************************************************************** */
+
+/* PENDIENTE: los fieldset pares deben tener un color de fondo “antiquewhite”*/
+
+/* PENDIENTE: último fieldset con botones centrados */
+
+
+/* PENDIENTE: Campos inválidos con backgroud color lightgray */
+
+
+/* PENDIENTE: Campos obligatorios con borde puntueado (dotted) de 5px y color fuchsia*/
+

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1000px;
+
+  /* PENDIENTE:centrado del contenido en página */
+
+}
+
+h1, h2 {
+  font-family: 'Optima', cursive;
+  /* PENDIENTE: texto alineado al centro*/
+
+}
+
+/* PEDIENTE: tamaño de fuente 2 veces el el tamaño de letra del elemento raíz*/
+h2 {
+
+}
+
+table {
+  width: 100%;
+
+  /* PENDIENTE: borde simple  */
+
+}
+
+th, td {
+  /* PENDIENTE: border sólido negro de 1 pixel*/
+
+}
+
+/****************************************************************/
+/******* Usa las siguientes reglas. Te ayudarán en el diseño*****/
+/****************************************************************/
+.item {
+  background-color: white;
+  border: 4px solid grey;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+}
+
+.negrita{
+  font-weight: bold;
+}
+
+.imagen {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 50%;
+  margin: 0px auto;
+}
+
+img{
+  object-fit: cover;
+}
+
+.redesSociales{
+  font-style: italic;
+  font-weight: bold;
+  color: grey;
+}
+
+
+/******************************************************/
+
+/* PENDIENTE: Cuando pasemos el ratón sobre una fila de la tabla
+aumente el tamaño de letra al doble, el color de fondo sea "azure" y el color de la fuente "blue" */
+
+
+/* PENDIENTE: Haz que la primera letra del titular tenga el doble de tamaño*/
+
+
+
+/* PENDIENTE: los enlaces del panel de navegación que cambien el color
+de su fuente a fuchsia cuando hayan sido visitados*/
+
+
+
+/********************************************************************************/
+/************************* PENDIENTE: container grid layout *********************/
+/********************************************************************************/
+/* Mobile */
+#container {
+
+  /* pendiente de completar */  
+  
+}
+
+@media (min-width: 1000px) {
+
+  /* pendiente de completar */
+
+}
+
+
+

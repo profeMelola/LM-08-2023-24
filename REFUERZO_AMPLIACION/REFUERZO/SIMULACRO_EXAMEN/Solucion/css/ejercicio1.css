@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1000px;
+
+  /* centrado del contenido en página */
+  margin: 0 auto;
+}
+
+/* header styles */
+h1, h2 {
+  font-family: 'Optima', cursive;
+
+  /* texto alineado al centro*/
+  text-align: center;
+
+}
+
+/* tamaño de fuente 2 veces el el tamaño de letra del elemento raíz*/
+h2 {
+  font-size: 2rem;
+}
+
+/* table styles */
+table {
+  /*ancho de la tabla al 100% de su contenedor*/
+  width: 100%;
+
+  /* borde simple (no doble) */
+  border-collapse: collapse;
+}
+
+th, td {
+  /*border sólido negro de 1 pixel y simple*/
+  border: 1px solid #000;
+}
+
+.item {
+  background-color: white;
+  border: 4px solid grey;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+}
+
+/* Usa esta regla */
+.negrita{
+  font-weight: bold;
+}
+
+/* Cuando pasemos el ratón sobre una fila de la tabla
+aumente el tamaño de letra al doble, el color de fondo sea "azure" y el color de la fuente "blue" */
+table tr:hover {
+  font-size: 2em;
+  background-color: azure;
+  color:blue;
+}
+
+/* Haz que la primera letra del titular tenga el doble de tamaño*/
+h1::first-letter {
+  font-size: 2em;
+}
+
+.imagen {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 60%;
+
+  /* centrada a su contenedor */
+  margin: 0px auto;
+}
+
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* *********************** */
+
+/* Sticky */
+footer {
+  top:0px;
+  position: sticky;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* los elementos flexibles del panel de navegación que lleven un relleno de 20px*/
+nav div{
+  padding: 20px;
+}
+
+/* los enlaces del panel de navegación que cambien el color
+de su fuente a fuchsia cuando hayan sido visitados*/
+nav div a:visited{
+  color: fuchsia;
+}
+
+
+article#recetas {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* ********************** */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer section:last-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer a{
+  padding: 10px;
+}
+
+.redesSociales{
+  font-style: italic;
+  font-weight: bold;
+  color: grey;
+}
+/* ********************** */
+
+/* container grid layout */
+/* Mobile */
+#container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 1000px) {
+
+  #container {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  header {
+    grid-row: 1;
+    grid-column: 1/ span 3;
+  }
+
+  footer {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }  
+
+  nav{
+    grid-row: 2 / span 3;
+    grid-column: 1;
+
+    gap: 10px;
+  }
+
+  main {
+    grid-row: 3;
+    grid-column: 2 / span 2;
+  }
+
+  aside {
+    grid-row: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+
+}
+
+
+
