@@ -41,7 +41,9 @@ Sass es un procesador CSS. Un preprocesador CSS es una herramienta que nos permi
 
 Estas características de los procesadores nos permiten, además, que el CSS que se genera sea más fácil de mantener y más reutilizable.
 
-[![Alt text](https://img.youtube.com/vi/uhvKSTQd06k&t=275s/0.jpg)](https://www.youtube.com/watch?v=uhvKSTQd06k&t=275s)
+
+![image](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/275c832a-aea0-434f-b9d5-d0d1c2825328) (https://www.youtube.com/watch?v=uhvKSTQd06k&t=275s)
+
 
 
 
