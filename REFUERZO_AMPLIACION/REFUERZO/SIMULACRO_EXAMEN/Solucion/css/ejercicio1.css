@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  max-width: 1000px;
+  max-width: 80vw;
 
   /* centrado del contenido en página */
   margin: 0 auto;
@@ -53,6 +53,21 @@ th, td {
   font-weight: bold;
 }
 
+.imagen {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 60%;
+
+  /* centrada a su contenedor */
+  margin: 0px auto;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /* Cuando pasemos el ratón sobre una fila de la tabla
 aumente el tamaño de letra al doble, el color de fondo sea "azure" y el color de la fuente "blue" */
 table tr:hover {
@@ -66,21 +81,8 @@ h1::first-letter {
   font-size: 2em;
 }
 
-.imagen {
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  width: 60%;
-
-  /* centrada a su contenedor */
-  margin: 0px auto;
-}
 
 
-img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 
 /* *********************** */
 
@@ -93,8 +95,8 @@ footer {
 
 nav {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -146,33 +148,106 @@ footer a{
 /* Mobile */
 #container {
   display: grid;
-  grid-template-rows: auto auto 1fr auto auto;
+  /*grid-template-rows: repeat(5, auto auto auto auto auto);*/
+  grid-template-rows: auto auto auto auto auto;
+  /*grid-template-rows: auto auto 1fr auto auto;*/
   grid-template-columns: 1fr;
+
+  grid-template-areas: 
+  "head"
+  "nav"
+  "main"
+  "aside"
+  "foot";
+
+
   gap: 12px;
+
 }
 
-@media (min-width: 1000px) {
+header{
+  grid-area: head;
+}
+
+nav{
+  grid-area: nav;
+}
+
+main{
+  grid-area:main;
+}
+
+aside{
+  grid-area:aside;
+}
+
+footer{
+  grid-area:foot;
+}
+
+/* header{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+nav{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+main{
+  grid-row: 3;
+  grid-column: 1;
+}
+
+aside{
+  grid-row: 4;
+  grid-column: 1;
+}
+
+footer{
+  grid-row:5;
+  grid-column: 1;
+} */
+
+/* el ancho como mínimo 800*/
+@media (min-width: 800px) {
 
   #container {
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto 1fr auto;
+
+    /*grid-template-areas: 
+    "head head head"
+    "nav foot foot"
+    "nav main main"
+    "nav aside aside";*/
+
   }
+
 
   header {
     grid-row: 1;
-    grid-column: 1/ span 3;
+    /*grid-column: 1/ span 3;*/
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / 4;
   }
 
   footer {
-    grid-column: 2 / span 2;
+    /*grid-column: 2 / span 2;*/
+    grid-column: 2 / 4;
     grid-row: 2;
   }  
 
   nav{
-    grid-row: 2 / span 3;
+    grid-row: 2 / 5;
     grid-column: 1;
 
-    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
   }
 
   main {
@@ -190,4 +265,4 @@ footer a{
 }
 
 
-
+ 

@@ -29,6 +29,7 @@ fieldset {
     
     /* margen eje superior a 20 px*/
     margin: 20px 0px;
+
 }
 
 legend {
@@ -42,10 +43,13 @@ legend {
 
 /* no puedes modificar el html*/
 /* los fieldset pares */
-fieldset:nth-child(2), fieldset:nth-child(4){
+/* form fieldset:nth-child(2), form fieldset:nth-child(4){
     background-color: antiquewhite;
-}
+} */
 
+fieldset:nth-child(even){
+    background-color: blueviolet;
+}
 /* último fieldset botones centrados */
 fieldset:last-child{
     text-align: center;
@@ -57,7 +61,7 @@ input:invalid{
 }
 
 /* Campos obligatorios border puntos 5px color fuchsia*/
-input:required{
+*:required{
     border: 5px dotted fuchsia;
 }
 

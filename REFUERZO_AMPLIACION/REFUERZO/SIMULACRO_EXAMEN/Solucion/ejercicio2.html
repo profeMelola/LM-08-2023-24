@@ -20,6 +20,11 @@
                 <fieldset>
                     <legend>Datos personales</legend>
                     <p>
+                        <label for="nombre">Nombre completo compactito
+                            <input name="nombre" size="50" minlength="10" required />
+                        </label>
+                    </p>
+                    <p>
                         <label for="nombre">Nombre completo</label>
                         <input id="nombre" name="nombre" size="50" minlength="10" required />
                     </p>
@@ -35,7 +40,7 @@
                     </p>
                     <p>
                         <label for="desc">Añade tu comentario</label>
-                        <textarea rows="5" cols="70" id="desc" name="desc">Escribe algo aquí</textarea>
+                        <textarea rows="5" cols="70" id="desc" name="desc" placeholder="blab lasdjfasd " required></textarea>
                     </p>
 
                     <p>
@@ -56,7 +61,7 @@
                         <label for="telefonofijo">Teléfono fijo</label>
                         <input id="telefonofijo" name="telefonofijo" pattern="[0-9]{9}" size="10"/>
                         <label for="telefonomovil">Móvil</label>
-                        <input id="telefonomovil" name="telefonomovil" pattern="[0-9]{9}" size="10" />
+                        <input type="tel" id="telefonomovil" name="telefonomovil" pattern="[0-9]{9}" size="10" />
                     </p>
                 </fieldset>
 
