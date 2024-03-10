@@ -65,3 +65,5 @@ https://www.wearedevelopers.com/magazine/best-css-frameworks
 Algunos frameworks ofrecen tanto CSS como Javascript. Nosotros usaremos uno muy simple para entender qué ofrecen y cómo se emplean.
 
 http://getskeleton.com/
+
+Tienes ejemplos de html generados con diferentes frameworks en la carpeta ejemploFramworks.
