@@ -43,7 +43,7 @@ Estas características de los procesadores nos permiten, además, que el CSS que
 
 [![Sass: openwebminar](https://img.youtube.com/vi/uhvKSTQd06k/0.jpg)](https://www.youtube.com/watch?v=uhvKSTQd06k)
 
-
+https://openwebinars.net/blog/que-es-sass-ventajas-desventajas-y-ejemplos-de-desarrollo/
 
 **Cómo compilar Sass - Tutorial desde cero**
 
