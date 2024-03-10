@@ -51,6 +51,17 @@ Estas características de los procesadores nos permiten, además, que el CSS que
 
 ## Frameworks de CSS
 
-Top 7 CSS Frameworks in 2024
+Un framework de software es una estructura sobre la que te basas para desarrollar software. Sirve como base para no comenzar de cero, se usa en muchos tipos de proyectos y para muchas tecnologías. Los frameworks nos permiten diseñar nuestras soluciones con decisiones e implementaciones de alto nivel, dejando los detalles de más bajo nivel al framework.
+
+
+Con los frameworks CSS es similar, podemos diseñar una página web decidiendo cada estilo y propiedad de la misma, o podemos usar un framework existente y hacer las modificaciones oportunas, esto nos permite ahorrar mucho tiempo y asegurarnos de que las soluciones que hacemos están probadas y ofrecen calidad.
+
+
+En el siguiente enlace podemos ver una lista de framework CSS populares.
 
 https://www.wearedevelopers.com/magazine/best-css-frameworks
+
+
+Algunos frameworks ofrecen tanto CSS como Javascript. Nosotros usaremos uno muy simple para entender qué ofrecen y cómo se emplean.
+
+http://getskeleton.com/
