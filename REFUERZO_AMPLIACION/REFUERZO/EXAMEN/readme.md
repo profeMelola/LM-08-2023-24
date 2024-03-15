@@ -10,9 +10,10 @@
 
 # EJERCICIO 2
 
-![imagen](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/2bdb1b88-3ae0-4625-9de6-81d32acf5ebf)
+![Captura de pantalla de 2024-03-15 19-34-54](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/3229ced1-5958-4544-b075-41fc6cf445e5)
 
-![imagen](https://github.com/profeMelola/LM-08-2023-24/assets/91023374/39e9fdc3-0e50-478d-823f-a2195dcc6f63)
+
+
 
 
 
