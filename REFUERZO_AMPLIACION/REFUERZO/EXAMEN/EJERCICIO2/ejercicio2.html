@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="icon" href="../index/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/ejercicio2.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.jpg" />
+        <h1>Regístrate en la Comunidad Saint Seiya</h1>
+    </header>
+    <main>
+        <form action="">
+            <!-- Al hacer click sobre el label se sitúe el cursor en el input correspondiente -->
+            <fieldset>
+                <legend>Signo del zodiaco</legend>
+                <p>
+                    <label for="signo">Indica tu signo del zoodiaco:</label>
+                    <select name="signo" id="signo">
+                        <option>Aries</option>
+                        <option>Tauro</option>
+                        <option>Géminis</option>
+                        <option>Cáncer</option>
+                        <option>Leo</option>
+                        <option>Virgo</option>
+                        <option>Libra</option>
+                        <option>Escorpio</option>
+                        <option>Sagitario</option>
+                        <option>Capricornio</option>
+                        <option>Acuario</option>
+                        <option>Piscis</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required />
+                </p>
+
+                <p>
+                    <label for="localidad">Localidad de Nacimiento:</label>
+                    <input type="text" name="localidad" id="localidad" size="50" maxlength="60" required/>
+                </p>
+
+                <p>
+                    <label for="provincia">Provincia:</label>
+                    <select multiple name="provincia">
+                        <optgroup label="Comunidad de Madrid">
+                            <option>Madrid</option>
+                        </optgroup>
+                        <optgroup label="Castilla la Mancha">
+                            <option selected>Cuenca</option>
+                            <option>Guadalajara</option>
+                            <option>Toledo</option>
+                            <option>Ciudad Real</option>
+                            <option>Albacete</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="direccion">Dirección</label>
+                    <textarea rows="5" cols="60" id="direccion" name="direccion">Escribe tu dirección</textarea>
+                </p>
+
+                <p>
+                    <label for="codpostal">C.P:</label>
+                    <input type="text" id="codpostal" size="5" name="codpostal" pattern="[0-9]{5}" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información adicional</legend>
+                <p>Estado civil:</p>
+                <input type="radio" name="estado" checked />Casado
+                <input type="radio" name="estado" />Soltero
+                <input type="radio" name="estado" />Viudo
+                <p>
+                <label for="hijos">Número de hijos:</label><input type="number" name="hijos" id="hijos" min="0" max="10">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit" value="Dar de alta"><img src="img/enviar.png"/></button>
+                <button type="reset" value="Limpiar campos"><img src="img/limpiar.png"/></button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
