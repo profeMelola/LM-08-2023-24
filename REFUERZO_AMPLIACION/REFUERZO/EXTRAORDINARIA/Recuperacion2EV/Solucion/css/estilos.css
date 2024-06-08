@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  /* A COMPLETAR: Página centrada con una anchura del 70% del viewport. */
+  margin: 0 auto;
+  /* max-width: 70vw; */
+  width: 70vw;
+}
+
+.item{
+  border: 3px solid mediumblue;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+
+    /* A COMPLETAR: Cada elemento del grid con borde redondeado 5px */
+    border-radius: 5px;
+}
+
+.container {
+  display: grid;
+
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr;
+
+  grid-template-areas: 
+  "head"
+  "nav"
+  "main"
+  "aside"
+  ;
+
+  /* A COMPLETAR: Grid layout con separación en la cuadrícula de 10px */
+  gap: 10px;
+
+}
+
+/** HEADER **/
+header {
+  background-color: lightblue;
+
+  grid-area: head;
+  display: flex;
+  justify-content: space-around;
+
+  /* A COMPLETAR: menú sticky*/
+  top: 0px;
+  position: sticky;
+  z-index: 100;
+
+  /* A COMPLETAR: tamaño fuente doble, color blanco y negrita*/
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;  
+}
+
+/** NAV **/
+nav{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: nav;
+   
+}
+
+  /* A COMPLETAR: espacio de relleno 10px y tamaño larger */
+nav>a{
+  font-size: larger;
+  padding: 10px;
+}
+
+/* A COMPLETAR: Los enlaces visitados deben ponerse de color fuchsia.*/
+nav>a:visited{
+  color:fuchsia;
+}
+
+
+/** MAIN **/
+main{
+  grid-area: main;
+}
+
+
+/** FORMULARIO **/
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* A COMPLETAR: La leyenda de cada fieldset ser de color mediumblue  y en negrita. */
+legend {
+  font-weight: bolder;
+  color: mediumblue;
+}
+
+/* A COMPLETAR: SIN USAR ATRIBUTO CLASS NI ID, el último grupo de elementos con los botones centrados. */
+fieldset:last-child {
+  text-align: center;
+}
+
+fieldset:first-child section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  align-items: center;
+}
+
+fieldset:nth-child(1){
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/* A COMPLETAR: Al pasar el ratón por encima de cada fieldset que cambie su color de fondo a lightcyan*/
+fieldset:hover {
+  background-color: lightcyan;
+}
+
+fieldset {
+  padding: 20px;
+  border: 4px solid silver;
+  border-radius: 6px;
+}
+
+input:required {
+  border: 5px dotted blueviolet;
+}
+
+input:invalid {
+  background-color: lightgrey;
+}
+
+aside{
+  grid-area: aside;
+
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
+
+  
+}
+
+aside section:last-child{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+@media (min-width: 1200px) {
+  
+  .container {
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr;
+
+    grid-template-areas: 
+    "head head"
+    "nav aside"
+    "nav main";
+
+  }
+
+  nav{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  fieldset:nth-child(1){
+    flex-direction: row;
+  }
+}

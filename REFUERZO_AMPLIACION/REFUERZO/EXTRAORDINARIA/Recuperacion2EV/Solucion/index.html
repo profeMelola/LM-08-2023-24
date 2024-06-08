@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="item">
+            <img src="img/logo.png" />
+            <p>Formulario de Alta</p>
+        </header>
+
+        <nav class="item">
+            <a href="#personales">Datos personales</a>
+            <a href="#observaciones">Observaciones</a>
+            <a href="#email">Email</a>
+            <a href="#tel">Teléfono</a>
+        </nav>
+
+        <aside class="item">
+            <section>
+                Visita nuestras <strong>redes sociales</strong> para estar al día
+            </section>
+            <section>
+                <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.gif" title="Facebook" alt="Facebook"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twiter.gif" title="Twitter" alt="Twitter"></a>
+                <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/instagram.gif" title="Instagram" alt="Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.gif" title="Youtube" alt="Youtube"></a>                        
+            </section>
+        </aside>
+
+        <main class="item">
+            <form>
+                <fieldset id="personales">
+                    <legend class="titulo" for="nombre">Datos personales</legend>
+                    <section>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" required />
+                        <label for="apellido1">Primer apellido</label>
+                        <input id="apellido1" name="apellido1" required />
+                        <label for="apellido2">Segundo apellido</label>
+                        <input id="apellido2" name="apellido2" />
+                    </section>
+                    <section>
+                            <label for="direccion">Calle, número, piso, puerta</label>
+                            <input id="direccion" name="direccion" size="50" maxlength="60" required />
+                            <label for="codigopostal">Código postal</label>
+                            <input id="codigopostal" name="codigopostal" pattern="[0-9]{5}" size="5" required />
+                            <label for="municipio">Municipio</label>
+                            <input id="municipio" name="municipio" required />
+                            <label for="provincia">Provincia</label>
+                            <select id="provincia" name="provincia" multiple>
+                                <option value="provincia1" selected>Provincia 1</option>
+                                <option value="provincia2">Provincia 2</option>
+                                <option value="provincia3">Provincia 3</option>
+                            </select>
+                    </section>
+                </fieldset>
+                <fieldset id="observaciones">
+                    <legend class="titulo" for="Observaciones">Observaciones</legend>
+                    <textarea id="Observaciones" cols="80" rows="10" placeholder="Escribe tu comentario"></textarea>
+                    <p>
+                        Adjunta tu reclamación: <input type="file"/>
+                    </p>
+                    
+                </fieldset>
+                <fieldset id="email">
+                    <legend class="titulo" for="email">Email</legend>
+                    <input id="email" type="email" name="email" required />
+                    <p>
+                        <input type="radio" name="tipo" checked>Personal</input>
+                        <input type="radio" name="tipo">Profesional</input>
+                    </p>
+                </fieldset>
+                <fieldset id="tel">
+                    <legend class="titulo" for="telefonofijo">Teléfono</legend>
+                    <p>
+                        <label for="telefonofijo">Fijo</label>
+                        <input id="telefonofijo" name="telefonofijo"/>
+                    </p>
+                    <p>
+                        <label for="telefonomovil">Móvil</label>
+                        <input id="telefonomovil" name="telefonomovil" required />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <input id="alta" type="submit" value="Registrar" />
+                    <input id="alta" type="reset" value="Limpiar" />
+                </fieldset>
+            </form>
+        </main>
+
+    </div>
+</body>
+
+</html>

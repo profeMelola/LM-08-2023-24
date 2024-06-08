@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  /* A COMPLETAR: Página centrada con una anchura del 70% del viewport. */
+
+}
+
+.item{
+  border: 3px solid mediumblue;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+
+    /* A COMPLETAR: Cada elemento del grid con borde redondeado 5px */
+
+}
+
+/* A COMPLETAR: Grid layout con separación en la cuadrícula de 10px */
+
+
+header {
+  background-color: lightblue;
+
+
+  /* A COMPLETAR: menú sticky*/
+
+  /* A COMPLETAR: fuente doble del tamaño por defecto, color blanco y negrita*/
+
+}
+
+/* A COMPLETAR: Al pasar el ratón por encima de cada fieldset que cambie su color de fondo a lightcyan*/
+
+/* A COMPLETAR: La leyenda de cada fieldset ser de color mediumblue  y en negrita. */
+
+/* A COMPLETAR: Los fieldset con espacio de relleno de 20px, border 4px sólido y color silver y redondeado a 6px*/
+
+/* A COMPLETAR: Los enlaces visitados del NAV deben ponerse de color fuchsia.*/
+
+/* A COMPLETAR: Los enlaces del NAV espacio de relleno 10px y tamaño larger */
+
+/* A COMPLETAR: SIN USAR ATRIBUTO CLASS NI ID, el último grupo de elementos con los botones centrados. */
+
+/* A COMPLETAR: Campos inválidos del formulario con color de fondo lightgrey */
+
+/* A COMPLETAR: Campos obligatorios con 5px de borde punteado y color blueviolet*/
+
+
+/* FORMATO DESKTOP*/
+@media (min-width: 1200px) {
+  
+
+}
