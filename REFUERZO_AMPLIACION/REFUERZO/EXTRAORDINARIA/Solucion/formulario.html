@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Grid/Flex</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <main>
+      
+      <form>
+        <h2>Formulario de alta</h2>
+          <fieldset class="bloque" id="f1">
+            <h3>Nombre y apellidos</h3>
+            <div>
+            Nombre <input name="nombre" required /> 
+            </div>
+            <div>
+            Primer apellido <input name="apellido1" required /> 
+            </div>
+            <div>
+            Segundo apellido <input name="apellido2" />
+            </div>
+          </fieldset>
+          <fieldset class="bloque" id="f2">
+            <h3>Dirección</h3>
+            <div>
+              <label for="direccion">Calle, número, piso, puerta</label>
+              <input id="direccion" name="direccion" size="50" maxlength="60" required />
+            </div>
+            <div>
+              <label for="codigopostal">Código postal</label>
+              <input id="codigopostal" name="codigopostal" pattern="[0-9]{5}" required/>
+            </div>
+            <div>
+              <label for="municipio">Municipio</label>
+              <input id="municipio" name="municipio" required />
+            </div>
+            <div>
+              <label for="provincia">Provincia</label>
+              <select id="provincia" name="provincia" multiple>
+                <option value="provincia1" >Provincia 1</option>
+                <option value="provincia2" selected>Provincia 2</option>
+                <option value="provincia3">Provincia 3</option>
+              </select>
+            </div>
+            </fieldset>
+          <fieldset class="bloque" id="f3">
+            <h3>Email</h3>
+            <div>
+              <input id="email" type="email" name="email" required />
+            </div>
+            <div>
+              <input type="radio" name="tipo" checked>Personal</input>
+              <input type="radio" name="tipo">Profesional</input>
+            </div>
+            </fieldset>
+          <fieldset class="bloque" id="f4">
+            <h3>Telefono</h3>
+            <div>
+              <label for="telefonofijo">Fijo</label>
+              <input id="telefonofijo" name="telefonofijo" pattern="[0-9]{9}"/>
+            </div>
+            <div>
+              <label for="telefonomovil">Móvil</label>
+              <input id="telefonomovil" name="telefonomovil" pattern="[0-9]{9}" required />
+            </div>
+          </div>
+            </fieldset>
+            <fieldset id="f5">
+              <input type="submit" value="Darme de alta" />
+              <input type="reset" value="Limpiar formulario" />
+            </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
